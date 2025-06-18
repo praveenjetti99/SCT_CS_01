@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 >Caesar Cipher Tool</h2>
+
+    <label for="message">Enter Message:</label>
+    <input type="text" id="message" placeholder="Your text here" />
+
+    <label for="shift">Shift Value:</label>
+    <input type="number" id="shift" min="0" max="25" value="3"/>
+
+    <div class="radio-group">
+      <input type="radio" name="mode" value="encrypt" checked /> Encrypt
+      <input type="radio" name="mode" value="decrypt" /> Decrypt
+    </div>
+
+    <button onclick="processCipher()">Process</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
